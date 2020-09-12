@@ -22,4 +22,9 @@ public class DepartamentoService {
 			dao.atualizar(obj);
 		}
 	}
+	
+	public void remove(Departamento obj) {
+		dao.excluirPorId(obj.getId());
+	}
 }
+

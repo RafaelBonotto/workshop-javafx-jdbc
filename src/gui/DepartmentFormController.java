@@ -127,14 +127,14 @@ public class DepartmentFormController implements Initializable {
 			throw new IllegalStateException("Departamento está nulo!");
 		}
 		txtId.setText(String.valueOf(entity.getId()));
-		txtNome.setText(String.valueOf(entity.getNome()));
+		txtNome.setText(entity.getNome());
 	}
 	
 	private void setErrorMessages(Map<String, String> errors) {
 		Set<String> fields = errors.keySet();
 		
-		if(fields.contains("nome")) {
-			labelErrorName.setText(errors.get("nome"));
+		if(fields.contains("Nome")) {
+			labelErrorName.setText(errors.get("Nome"));
 		}
 	}
 
