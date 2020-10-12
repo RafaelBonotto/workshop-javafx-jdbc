@@ -64,8 +64,8 @@ public class Vendedor implements Serializable {
 		return salarioBase;
 	}
 
-	public void setSalarioBase(Double salrioBase) {
-		this.salarioBase = salrioBase;
+	public void setSalarioBase(Double salarioBase) {
+		this.salarioBase = salarioBase;
 	}
 
 	public Departamento getDepartamento() {
